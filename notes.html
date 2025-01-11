@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Task App in JavaScript</title>
+  <link rel="stylesheet" href="notes.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Iconscout Link For Icons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+  <div class="popup-box">
+    <div class="popup">
+      <div class="content">
+        <header>
+          <p></p>
+          <i class="uil uil-times"></i>
+        </header>
+        <form action="#">
+          <div class="row title">
+            <label>Title</label>
+            <input type="text" spellcheck="true" required>
+          </div>
+          <div class="row description">
+            <label>Description</label>
+            <textarea spellcheck="true" required></textarea>
+          </div>
+          <div class="row date">
+            <label> Due-Date</label>
+            <input type="date" id="task-date" required>
+          </div>
+             <!-- add button  -->
+             <select id="Priority" placeholder="priority">
+             <option value="">Priority</option> 
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+         
+          <button></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <li class="add-box">
+      <div class="icon"><i class="uil uil-plus"></i></div>
+      <p>Add new Task</p>
+      <div class="counters">
+        <span>Completed: <span id="completed-count">0</span></span>
+        <span>Uncompleted: <span id="uncompleted-count">0</span></span>
+      </div>
+      
+     
+    </li>
+  </div>
+
+ 
+ 
+
+  <div>
+    <button class="delete-all-btn">Delete All Tasks</button> 
+ </div>
+ 
+  
+  <script src="note.js"></script>
+</body>
+</html>
